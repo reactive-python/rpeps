@@ -1,0 +1,62 @@
+---
+nav:
+  - Home: index.md
+  - Proposals:
+      - RPEP-0000: rpeps/RPEP-0000.md
+  - Template: template.md
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/white-balance-sunny
+        name: Switch to light mode
+      primary: light blue
+      accent: light blue
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: black
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+  logo: https://raw.githubusercontent.com/reactive-python/reactpy/main/branding/svg/reactpy-logo-square.svg
+  favicon: https://raw.githubusercontent.com/reactive-python/reactpy/main/branding/svg/reactpy-logo-square.svg
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.keys
+
+plugins:
+  - search
+  - section-index
+
+site_name: ReactPy
+site_description: ReactPy Enhancement Proposals
+copyright: Copyright &copy; 2023 Reactive Python
+repo_url: https://github.com/reactive-python/rpeps
+site_url: https://reactive-python.github.io/rpeps
+repo_name: reactive-python/rpeps
+edit_uri: edit/main
